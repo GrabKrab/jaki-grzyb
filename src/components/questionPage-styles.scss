@@ -1,0 +1,22 @@
+.questionPage {
+  border: 1px solid black;
+  padding-bottom: 15px;
+
+  .question {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .answers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .buttony{
+      width: 400px;
+    }
+  }
+
+}

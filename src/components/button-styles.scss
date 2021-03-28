@@ -1,0 +1,12 @@
+.button {
+  text-align: center;
+  margin-top: 15px;
+  border: 1px solid black ;
+  background: cadetblue;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(136, 221, 224);
+  }
+}

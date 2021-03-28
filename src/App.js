@@ -1,25 +1,73 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Header from './components/header-component'
+import Introduction from './components/introduction-component';
+import Button from './components/button-component';
+import QuestionPage from './components/questionPage-component';
+import Result from './components/result-component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import QUESTIONS from './data/data';
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      quizOn: false,
+      questions: QUESTIONS,
+      questionNr: 0,
+      points: 0
+    };
+  };
+
+  onPressed = () => {
+    this.setState({ quizOn: true});
+  }
+
+  saveAnswer = (p) => {
+
+    this.setState({ points: this.state.points+p});
+    this.nextQuestion();
+    console.log("points", this.state.points, this.state.questionNr)
+  }
+
+  nextQuestion = () => {
+    this.setState({ questionNr: this.state.questionNr+1 });
+  }
+
+  render() {
+    const quizOn = this.state.quizOn;
+    const qNr = this.state.questionNr;
+    if (qNr >= this.state.questions.length) {
+      return(
+        <Result points={this.state.points}/>
+      )
+    }
+    
+    if (quizOn) {
+      const  {nr, question, srcImg, answers} = this.state.questions[qNr];
+      return (
+        
+        <div>
+          <Header text="Jakim jesteś grzybem?"/>
+
+          <QuestionPage 
+            question={question}
+            srcImg={srcImg}
+            answers={answers}
+            saveAnswer={this.saveAnswer}
+          />
+        </div>        
+      ) 
+    } else {
+      return (
+        <div>
+          <Header text="QUIZ Jakim jesteś grzybem?"/>
+          <Introduction />
+          <Button buttonText='Rozpocznij quiz' onPressed={this.onPressed}/>
+        </div>
+      )
+    }
+  }
 }
 
 export default App;
