@@ -9,7 +9,7 @@ const GRZYBY = [
   },
   {
     name: "Huba pospolita",
-    imgUrl: "https://lh3.googleusercontent.com/proxy/HVS4HivPAPDx_0EDXvGW0k7M2t3u6u4IywvZeCwa2mFbkZCaCzdXcLOrybyHBPvYZ1FykT9XhcCvi3NslRlYwrdMv_1bHhcC7ARtevxNv2a532gO83ETRQMumEOIhXnDV74Khgm4"
+    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Fomes_fomentarius_G3.jpg"
   },
   {
     name: "Purchawka chropowata",
