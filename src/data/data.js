@@ -16,23 +16,23 @@ const QUESTIONS = [
     question: 'Czy perdzisz w towarzystwie?',
     srcImg: "https://wiatrodyskretni.pl/wp-content/uploads/2019/09/cuchnące-bąki-dlaczego-śmierdzą.jpg",
     answers: [
-      "Zawsze wychodze na dwór",
+      "Zanim pierdne proszę wszystkich o uwagę",
+      "Pierdzę i się nie wstydzę",
       "Zdarza się, ale odwracam się dupa w strone sciany",
       "Prukam i udaję, że to ktoś inny pruknął",
-      "Pierdzę i się nie wstydzę",
-      "Zanim pierdne proszę wszystkich o uwagę"
+      "Zawsze wychodze na dwór",
     ]
   },
   {
     nr: 3,
     question: 'Czy lubisz masło?',
     srcImg: "https://poznajsienatluszczach.pl/wp-content/uploads/2016/07/Fotolia_111797237.jpg",
-    answers: [
-      "Codziennie zjadam trzy kostki masła",
+    answers: [   
       "Smaruję siebie masłem po każdym prysznicu",
       "Grubo smaruję kanapki",
       "Cienko smaruję kanapki",
-      "Nienawidzę masła"
+      "Nienawidzę masła",
+      "Codziennie zjadam trzy kostki masła",
     ]
   },
   {
@@ -52,11 +52,11 @@ const QUESTIONS = [
     question: 'W czym pierzesz skarpetki',
     srcImg: "https://ulapedantula.pl/wp-content/uploads/2018/02/IMG_9010-800x533.jpg",
     answers: [
-      "W pralce",
-      "W muszli klozetowej",
-      "W rzece",
       "W szambie",
-      "Wogóle nie piorę"
+      "Wogóle nie piorę",
+      "W muszli klozetowej",
+      "W rzece",      
+      "W pralce"
     ]
   },
   {
@@ -64,9 +64,9 @@ const QUESTIONS = [
     question: 'Czy uczepiasz się drzew i wtapiasz się w drewno?',
     srcImg: "https://www.lasy.gov.pl/pl/informacje/aktualnosci/lecznicza-moc-huby/huba01.jpg/@@images/image",
     answers: [
-      "Zawsze",
       "Próbowałem(-am), ale odpadam",
       "Tak, ale tylko obcięte pnie",
+      "Zawsze",
       "Nie",
       "Nie znam się na drzewach"
     ]
@@ -89,10 +89,10 @@ const QUESTIONS = [
     srcImg: "https://pbs.twimg.com/media/C7hstI9XUAAZAo_.jpg",
     answers: [
       "Tak, żyjemy w symbiozie",
+      "Zabijam muchy",
       "Mam wszystko w nosie",
       "Sam jestem muchą",
-      "W nosie mam jedynie kozy",
-      "Zabijam muchy",
+      "W nosie mam jedynie kozy",  
     ]
   },
   {

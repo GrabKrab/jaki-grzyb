@@ -7,7 +7,7 @@ import GRZYBY from '../data/result';
 
 const Result = ({points, onPressed}) => {
   console.log(points);
-  const grzybNr = Math.ceil(points / 10);
+  const grzybNr = Math.ceil(points / 10) -1;
   console.log(grzybNr);
   return (
     <div>
