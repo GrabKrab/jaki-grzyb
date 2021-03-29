@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/jaki-grzyb/static/css/main.a443da1a.chunk.css",
-    "main.js": "/jaki-grzyb/static/js/main.9b93da05.chunk.js",
-    "main.js.map": "/jaki-grzyb/static/js/main.9b93da05.chunk.js.map",
+    "main.css": "/jaki-grzyb/static/css/main.5716fa4c.chunk.css",
+    "main.js": "/jaki-grzyb/static/js/main.34df2ffc.chunk.js",
+    "main.js.map": "/jaki-grzyb/static/js/main.34df2ffc.chunk.js.map",
     "runtime-main.js": "/jaki-grzyb/static/js/runtime-main.d7d9142c.js",
     "runtime-main.js.map": "/jaki-grzyb/static/js/runtime-main.d7d9142c.js.map",
     "static/js/2.f5b6b4c5.chunk.js": "/jaki-grzyb/static/js/2.f5b6b4c5.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.8540d55d.chunk.js": "/jaki-grzyb/static/js/3.8540d55d.chunk.js",
     "static/js/3.8540d55d.chunk.js.map": "/jaki-grzyb/static/js/3.8540d55d.chunk.js.map",
     "index.html": "/jaki-grzyb/index.html",
-    "static/css/main.a443da1a.chunk.css.map": "/jaki-grzyb/static/css/main.a443da1a.chunk.css.map",
+    "static/css/main.5716fa4c.chunk.css.map": "/jaki-grzyb/static/css/main.5716fa4c.chunk.css.map",
     "static/js/2.f5b6b4c5.chunk.js.LICENSE.txt": "/jaki-grzyb/static/js/2.f5b6b4c5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d7d9142c.js",
     "static/js/2.f5b6b4c5.chunk.js",
-    "static/css/main.a443da1a.chunk.css",
-    "static/js/main.9b93da05.chunk.js"
+    "static/css/main.5716fa4c.chunk.css",
+    "static/js/main.34df2ffc.chunk.js"
   ]
 }
