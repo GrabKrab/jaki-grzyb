@@ -9,15 +9,15 @@ return (
     <h2 className='question'>{question}</h2>
     <div className='answers'>
       <img src={srcImg} alt='questionImage'/>
-      <div className='buttony'>
-        {answers.map((answer, id) => 
-          <Button
-            key={id}
-            buttonText={answer}
-            onPressed={() => saveAnswer(id+1)}/>
-        )}
-      </div>
     </div>
+    <div className='buttony'>
+    {answers.map((answer, id) => 
+      <Button
+        key={id}
+        buttonText={answer}
+        onPressed={() => saveAnswer(id+1)}/>
+    )}
+  </div>
   </div>
 );
       }

@@ -1,22 +1,30 @@
 .questionPage {
   border: 1px solid black;
   padding-bottom: 15px;
+  text-align: center; 
 
   .question {
-    text-align: center;
-    padding-bottom: 15px;
-    margin-bottom: 10px;
+
+    padding-bottom: 5px;
+    margin-bottom: 5px;
     border-bottom: 1px solid black;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    
   }
 
   .answers {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .buttony{
-      width: 400px;
-    }
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
   }
+    
+  .buttony{
+    text-align: center; 
+    width: auto;
+  }
+  
 
 }

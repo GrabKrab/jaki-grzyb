@@ -20,11 +20,18 @@ class App extends Component {
   };
 
   onPressed = () => {
-    this.setState({ quizOn: true});
+    this.setState({ quizOn: !this.state.quizOn});
+  }
+
+  reset = () => {
+    this.setState({
+      quizOn: false,
+      questionNr: 0,
+      points: 0,
+    })
   }
 
   saveAnswer = (p) => {
-
     this.setState({ points: this.state.points+p});
     this.nextQuestion();
     console.log("points", this.state.points, this.state.questionNr)
@@ -39,7 +46,7 @@ class App extends Component {
     const qNr = this.state.questionNr;
     if (qNr >= this.state.questions.length) {
       return(
-        <Result points={this.state.points}/>
+        <Result points={this.state.points} onPressed={this.reset}/>
       )
     }
     
